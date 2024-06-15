@@ -4,6 +4,7 @@ import { navLinks } from '../constants'
 import user from '../assets/User.svg'
 import logo from "../assets/logo.svg"
 import navMenu from "../assets/navMenu.svg"
+import Button from './button'
 
 const Navbar = () => {
   return (
@@ -19,10 +20,7 @@ const Navbar = () => {
                 </li>
             ))}
 
-              <button className='flex items-center bg-purple px-[1.875rem] py-[1.1875rem] rounded-[1.25rem]'>
-                <img src={user} className='size-5 mr-3' alt="UserPhoto" />
-                <span className='text-white font-semibold'>Sign up</span> 
-            </button>
+            <Button icon={user} title={'Sign up'} size={'small'}/>
         </ul>
 
         <div className='md:hidden'>

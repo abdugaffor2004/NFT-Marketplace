@@ -11,7 +11,7 @@ const styles = {
 
   paddingXHeader: "sm:px-[3.125rem] px-[1.875rem]",
   paddingX: "sm:px-[4.5rem] md:px-[7.1875rem] px-[1.875rem]",
-  paddingY: "sm:py-20 py-6",
+  paddingY: "sm:py-20 py-[2.5rem]",
   padding: "sm:px-16 px-6 sm:py-12 py-4",
 
   marginX: "sm:mx-16 mx-6",
