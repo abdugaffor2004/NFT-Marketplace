@@ -4,7 +4,6 @@ import rocketLaunch from '../assets/RocketLaunch.svg'
 import imagePlaceholder from '../assets/ImagePlaceholder.svg'
 import avatar from '../assets/Avatar.svg'
 import { statistics } from '../constants'
-import '../index.css'
 
 // const Hero = () => (
   

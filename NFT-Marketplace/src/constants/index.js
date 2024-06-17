@@ -27,3 +27,24 @@ export const statistics = [
     count: '240k+'
   }
 ]
+
+export const trendingCollections = [
+  {
+    fImage: "/assets/PrimaryPhotoPlaceholder.png",
+    sImage: "/assets/SecondaryPhotoPlaceholder.png",
+    tImage: "/assets/ThirdPhotoPlaceholder.png",
+    trendingAmount: "1025+",
+    title: "DSGN Animals",
+    authorName: "MrFox",
+    authorAvatar: "/assets/AvatarPlaceholder.svg",
+  },
+  {
+    fImage: "/assets/PrimaryPhotoPlaceholder.png",
+    sImage: "/assets/SecondaryPhotoPlaceholder.png",
+    tImage: "/assets/ThirdPhotoPlaceholder.png",
+    trendingAmount: "1025+",
+    title: "DSGN Animals",
+    authorName: "MrFox",
+    authorAvatar: "/assets/AvatarPlaceholder.svg",
+  },
+];
