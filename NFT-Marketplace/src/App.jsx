@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style'
-import { Hero, Navbar } from './components'
-import Trending from './components/Trending'
+import { Hero, HowItWorks, Navbar, Trending} from './components'
+
 
 const App = () => (
   <div className='bg-background w-full overflow-hidden'>
@@ -17,6 +17,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Hero />
         <Trending />
+        <HowItWorks />
       </div>
     </div>
   
