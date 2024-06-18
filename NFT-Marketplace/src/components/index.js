@@ -4,6 +4,7 @@ import Trending from "./Trending"
 import HowItWorks from "./HowItWorks"
 import Creators from "./Creators"
 import Categories from "./Categories"
+import DiscoverNft from "./DiscoverNft"
 
 export {
     Hero,
@@ -11,5 +12,6 @@ export {
     Trending,
     HowItWorks,
     Creators,
-    Categories
+    Categories,
+    DiscoverNft
 }

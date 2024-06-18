@@ -3,7 +3,7 @@ import { creatorsCard } from '../constants'
 import Button from './button'
 import buttonIcon from "../assets/RocketLaunch.svg"
 import { useWindowSize } from '../hooks/useWindowSize'
-import { chopArray } from '../helpers'
+import { chopArray, getImage } from '../helpers'
 
 const Creators = () => {
     let cardsArray=[];
@@ -34,7 +34,7 @@ const Creators = () => {
                 {cardsArray.map((item) => (
                     <div key={item.grade} className='bg-backgroundSecond flex items-center p-5 rounded-[1.25rem] mb-5 last:mb-0 sm:last:mb-5 md:flex-col md:items-center md:text-center md:mb-[1.875rem]'>
                         <div className='sticky min-w-[60px] w-[22%] mr-5 xs:ml-5 sm:w-[60px] md:w-[120px]'>
-                            <img src={item.avatar} alt="avatarIcon" />
+                            <img src={getImage(item.avatar, "creators") } alt="avatarIcon" />
                             <div className='absolute top-[-10%] left-[-20%] md:left-[-30%] md:top-[0] flex items-center justify-center w-[1.875rem] h-[1.875rem] bg-background text-grey font-spaceMono rounded-[50%]'>{item.grade}</div>
                         </div>
                         <div className='md:mt-5'>

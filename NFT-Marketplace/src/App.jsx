@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { Categories, Creators, Hero, HowItWorks, Navbar, Trending} from './components'
+import { Categories, Creators, DiscoverNft, Hero, HowItWorks, Navbar, Trending} from './components'
 
 
 
@@ -20,6 +20,7 @@ const App = () => (
         <Trending />
         <Creators />
         <Categories />
+        <DiscoverNft />
         <HowItWorks />
       </div>
     </div>
