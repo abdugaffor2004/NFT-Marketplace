@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './style'
-import { Hero, HowItWorks, Navbar, Trending} from './components'
+import { Creators, Hero, HowItWorks, Navbar, Trending} from './components'
+
 
 
 const App = () => (
@@ -17,7 +18,8 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <Hero />
         <Trending />
-        <HowItWorks />
+        <Creators />
+        {/* <HowItWorks /> */}
       </div>
     </div>
   

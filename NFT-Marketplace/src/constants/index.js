@@ -68,3 +68,84 @@ export const howItWorksCards = [
     icon: "assets/HowItWorksIcon_3.png",
   },
 ];
+
+export const creatorsCard = [
+  {
+    avatar: "assets/ArtistAvatar_1.png",
+    title: "Keepitreal",
+    sales: "34.53",
+    grade: "1",
+  },
+  {
+    avatar: "assets/ArtistAvatar_2.png",
+    title: "DigiLab",
+    sales: "32.13",
+    grade: "2",
+  },
+  {
+    avatar: "assets/ArtistAvatar_3.png",
+    title: "GravityOne",
+    sales: "28.93",
+    grade: "3",
+  },
+  {
+    avatar: "assets/ArtistAvatar_4.png",
+    title: "Juanie",
+    sales: "25.30",
+    grade: "4",
+  },
+  {
+    avatar: "assets/ArtistAvatar_5.png",
+    title: "BlueWhale",
+    sales: "22.22",
+    grade: "5",
+  },
+  {
+    avatar: "assets/ArtistAvatar_6.png",
+    title: "Mr Fox",
+    sales: "19.28",
+    grade: "6",
+  },
+
+
+
+
+
+
+  {
+    avatar: "assets/ArtistAvatar_7.png",
+    title: "Shroomie",
+    sales: "34.53",
+    grade: "7",
+  },
+  {
+    avatar: "assets/ArtistAvatar_8.png",
+    title: "Robotica",
+    sales: "34.53",
+    grade: "8",
+  },
+  {
+    avatar: "assets/ArtistAvatar_9.png",
+    title: "RustyRobot",
+    sales: "34.53",
+    grade: "9",
+  },
+  {
+    avatar: "assets/ArtistAvatar_10.png",
+    title: "Animakid",
+    sales: "34.53",
+    grade: "10",
+  },
+  {
+    avatar: "assets/ArtistAvatar_11.png",
+    title: "Dotgu",
+    sales: "34.53",
+    grade: "11",
+  },
+  {
+    avatar: "assets/ArtistAvatar_12.png",
+    title: "Ghiblier",
+    sales: "34.53",
+    grade: "12",
+  },
+];
