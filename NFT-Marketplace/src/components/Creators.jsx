@@ -9,7 +9,7 @@ const Creators = () => {
     let cardsArray=[];
     const [width, height] = useWindowSize();
   
-    if(width >= 320){
+    if(width >= 0){
         cardsArray = chopArray(creatorsCard, 5)
     }
     if(width >= 834){
