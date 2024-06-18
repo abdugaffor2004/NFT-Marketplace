@@ -107,11 +107,6 @@ export const creatorsCard = [
     grade: "6",
   },
 
-
-
-
-
-
   {
     avatar: "assets/ArtistAvatar_7.png",
     title: "Shroomie",
@@ -147,5 +142,41 @@ export const creatorsCard = [
     title: "Ghiblier",
     sales: "34.53",
     grade: "12",
+  },
+];
+
+
+export const categoriesCard = [
+  {
+    image: "assets/CategoriesImage_1.png",
+    title: "Art",
+  },
+  {
+    image: "assets/CategoriesImage_2.png",
+    title: "Collectibles",
+  },
+  {
+    image: "assets/CategoriesImage_3.png",
+    title: "Music",
+  },
+  {
+    image: "assets/CategoriesImage_4.png",
+    title: "Photography",
+  },
+  {
+    image: "assets/CategoriesImage_5.png",
+    title: "Video",
+  },
+  {
+    image: "assets/CategoriesImage_6.png",
+    title: "Utility",
+  },
+  {
+    image: "assets/CategoriesImage_8.png",
+    title: "Worlds",
+  },
+  {
+    image: "assets/CategoriesImage_7.png",
+    title: "Sport",
   },
 ];

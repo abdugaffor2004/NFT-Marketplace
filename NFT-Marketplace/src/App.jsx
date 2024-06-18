@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { Creators, Hero, HowItWorks, Navbar, Trending} from './components'
+import { Categories, Creators, Hero, HowItWorks, Navbar, Trending} from './components'
 
 
 
@@ -19,7 +19,8 @@ const App = () => (
         <Hero />
         <Trending />
         <Creators />
-        {/* <HowItWorks /> */}
+        <Categories />
+        <HowItWorks />
       </div>
     </div>
   

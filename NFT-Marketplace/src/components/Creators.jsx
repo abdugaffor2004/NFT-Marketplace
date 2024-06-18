@@ -3,7 +3,7 @@ import { creatorsCard } from '../constants'
 import Button from './button'
 import buttonIcon from "../assets/RocketLaunch.svg"
 import { useWindowSize } from '../hooks/useWindowSize'
-import { chopArray } from './helpers'
+import { chopArray } from '../helpers'
 
 const Creators = () => {
     let cardsArray=[];
@@ -23,14 +23,14 @@ const Creators = () => {
 
     return(
         <section className='mt-[5rem] text-white'>
-            <div className=' xl:ml-[60px] flex justify-between items-end'>
+            <div className='flex justify-between items-end'>
                 <div>
                     <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>Top Creators</h3>
                     <p className='mt-2.5 font-workSans font-normal text-base leading[1.4rem] xs:text-[1.2rem] sm:text-base sm:max-w-[343px] lg:text-[1.375rem] lg:max-w-full'>Checkout Top Rated Creators on the NFT Marketplace</p>
                 </div>
                 <div className=' hidden sm:block'><Button title="View Rankings" icon={buttonIcon} outlined={true} /></div>
             </div>
-            <div className='mt-10 sm:flex sm:flex-wrap sm:justify-around lg:mt-[3.75rem]'>
+            <div className='mt-10 sm:flex sm:flex-wrap sm:justify-around lg:mt-[3.75rem] lg:justify-between'>
                 {cardsArray.map((item) => (
                     <div key={item.grade} className='bg-backgroundSecond flex items-center p-5 rounded-[1.25rem] mb-5 last:mb-0 sm:last:mb-5 md:flex-col md:items-center md:text-center md:mb-[1.875rem]'>
                         <div className='sticky min-w-[60px] w-[22%] mr-5 xs:ml-5 sm:w-[60px] md:w-[120px]'>

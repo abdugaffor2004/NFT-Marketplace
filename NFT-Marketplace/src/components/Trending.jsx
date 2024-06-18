@@ -18,14 +18,14 @@ import authorAvatar_3 from "../assets/AvatarPlaceholder_3.svg"
 const Trending = () => (
   
     <section className='mt-[5rem]'>
-        <div className='text-white xl:ml-[60px]'>
+        <div className='text-white '>
             <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>Trending Collection</h3>
             <p className='mt-2.5 font-workSans font-normal text-base leading[1.4rem] xs:text-[1.2rem] sm:text-base lg:text-[1.375rem]'>Checkout our weekly updated trending collection</p>
         </div>
 
-        <div className='mt-10 text-white sm:flex lg:justify-evenly'>
+        <div className='mt-10 text-white sm:flex lg:justify-between'>
 
-            <div className='sm:max-w-[360px] sm:mr-[1.875rem]'>
+            <div className='sm:max-w-[360px] sm:mr-[1.875rem] lg:min-w-[360px]'>
                 <div>
                     <img className='w-full' src={primaryImage_1} alt="PrimaryImage" />
                 </div>
@@ -46,7 +46,7 @@ const Trending = () => (
             </div>
 
 
-            <div className='sm:max-w-[330px] hidden sm:block md:mr-[1.875rem]'>
+            <div className='sm:max-w-[330px] hidden sm:block md:mr-[1.875rem] lg:min-w-[360px]'>
                 <div>
                     <img className='w-full' src={primaryImage_2} alt="PrimaryImage" />
                 </div>
@@ -66,7 +66,7 @@ const Trending = () => (
                 </div>
             </div>
 
-             <div className='sm:max-w-[330px] hidden md:block'>
+            <div className='sm:max-w-[330px] hidden md:block lg:min-w-[360px]'>
                 <div>
                     <img className='w-full' src={primaryImage_3} alt="PrimaryImage" />
                 </div>
