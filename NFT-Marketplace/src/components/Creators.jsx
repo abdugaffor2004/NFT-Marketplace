@@ -1,7 +1,7 @@
 import React from 'react'
 import { creatorsCard } from '../constants'
 import Button from './button'
-import buttonIcon from "../assets/RocketLaunch.svg"
+import buttonIcon from "../assets/RocketLaunchOutlined.svg"
 import { useWindowSize } from '../hooks/useWindowSize'
 import { chopArray, getImage } from '../helpers'
 

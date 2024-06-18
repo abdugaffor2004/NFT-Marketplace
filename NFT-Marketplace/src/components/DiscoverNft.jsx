@@ -1,8 +1,8 @@
 import React from 'react'
-import eyeIcon from "../assets/Eye.png"
+import eyeIcon from "../assets/EyeOutlined.png"
 import Button from './button'
-import imageNFT_1 from "../assets/NFT/ImageNFT_1.png"
-import avatarNFT_1 from "../assets/NFT/AvatarNFT_1.svg"
+import { NFTs } from '../constants'
+import { getImage } from '../helpers'
 
 const DiscoverNft = () => (
   
@@ -15,13 +15,41 @@ const DiscoverNft = () => (
             <div className=' hidden sm:block'><Button title="See All" icon={eyeIcon} outlined={true} /></div>
         </div>
 
-        <div className='mt-[2.5rem] flex flex-wrap justify-between'>
+        <div className='mt-[2.5rem] flex flex-wrap justify-between xs:justify-center sm:justify-between sm:flex-nowrap md:justify-center lg:justify-between lg:mt-[3.75rem]'>
+            {NFTs.map((item) =>(
+                <div key={item.title} className='mb-5 last:mb-0 sm:mb-0 sm:first:mr-[1.875rem] sm:last:hidden lg:last:block lg:last:ml-[1.875rem]'>
+                    <img className='rounded-t-[1.25rem] ss:min-w-[300px] ss:h-auto' src={getImage(item.image, "NFT")} alt="Image" />
+                    <div className='bg-backgroundSecond px-5 pt-5 pb-[1.5625rem] rounded-b-[1.25rem]'>
+                        <div>
+                            <h6 className='font-workSans font-semibold text-[1.375rem]'>{item.title}</h6>
+                            <div className='flex mt-1'>
+                                <img className='mr-3' src={getImage(item.authorAvatar, "NFT")} alt="Avatar" />
+                                <span className='font-spaceMono font-normal'>{item.authorName}</span>
+                            </div>
+                        </div>
+
+                        <div className='mt-[1.5625rem] flex justify-between font-spaceMono font-normal text-xs'>
+                            <div className='flex flex-col'>
+                                <span className='text-grey'>Price</span>
+                                <span className='mt-2 sm:text-base'>{item.price} ETH</span>
+                            </div>
+                            <div className='flex flex-col items-end'>
+                                <span className='text-grey'>Highest Bid</span>
+                                <span className='mt-2 sm:text-base'>{item.highestBid} wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+
+        {/* <div className='mt-[2.5rem] flex flex-wrap justify-between'>
             <div className='min-w-[315px] w-[148px]'>
                 <img className='rounded-t-[1.25rem]' src={imageNFT_1} alt="Image" />
                 <div className='bg-backgroundSecond px-5 pt-5 pb-[1.5625rem] rounded-b-[1.25rem]'>
                     <div>
                         <h6 className='font-workSans font-semibold text-[1.375rem]'>Distant Galaxy</h6>
-                        <div className='flex'>
+                        <div className='flex mt-1'>
                             <img className='mr-3' src={avatarNFT_1} alt="Avatar" />
                             <span className='font-spaceMono font-normal'>MoonDancer</span>
                         </div>
@@ -39,7 +67,7 @@ const DiscoverNft = () => (
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </section>
   
 )

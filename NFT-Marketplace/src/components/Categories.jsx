@@ -9,7 +9,7 @@ function Categories() {
         <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>Browse Categories</h3>
       </div>
 
-      <div className='mt-[2.5rem] flex flex-wrap justify-between '>
+      <div className='mt-[2.5rem] flex flex-wrap justify-between xs:justify-around sm:justify-between '>
 
         {categoriesCard.map((item) =>(
           <div key={item.title} className='min-w-[148px] w-[148px] mb-5 md:w-[240px] md:h-[316px]'>
