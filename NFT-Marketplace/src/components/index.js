@@ -7,6 +7,7 @@ import Categories from "./Categories"
 import DiscoverNft from "./DiscoverNft"
 import Auction from "./Auction"
 import Timer from "./Timer"
+import Join from "./Join"
 
 export {
     Hero,
@@ -17,5 +18,6 @@ export {
     Categories,
     DiscoverNft,
     Auction,
-    Timer
+    Timer,
+    Join
 }

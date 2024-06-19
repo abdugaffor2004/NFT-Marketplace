@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { Auction, Categories, Creators, DiscoverNft, Hero, HowItWorks, Navbar, Trending} from './components'
+import { Auction, Categories, Creators, DiscoverNft, Hero, HowItWorks, Join, Navbar, Trending} from './components'
 
 
 
@@ -26,14 +26,13 @@ const App = () => (
     </div>
 
     <div className={`bg-primary ${styles.flexStart}`}>
-      
         <Auction />
-      
     </div>
 
-    <div className={`bg-primary ${styles.flexStart} ${styles.paddingX} ${styles.paddingY} pt-0`}>
+    <div className={`bg-primary ${styles.flexStart} ${styles.paddingX} pb-20`}>
       <div className={`${styles.boxWidth}`}>
         <HowItWorks />
+        <Join />
       </div>
     </div>
   
