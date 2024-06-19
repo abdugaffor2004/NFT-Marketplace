@@ -6,7 +6,7 @@ import { getImage } from '../helpers'
 
 const DiscoverNft = () => (
   
-    <section className='mt-[5rem] text-white'>
+    <section className='mt-[5rem] text-white lg:mt-[10rem]'>
         <div className='flex justify-between items-end'>
             <div>
                 <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>Discover More NFTs</h3>

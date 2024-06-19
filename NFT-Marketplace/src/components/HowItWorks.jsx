@@ -4,7 +4,7 @@ import { getImage } from '../helpers'
 
 const HowItWorks = () => (
   
-    <section className='mt-[2.5rem] text-white'>
+    <section className='mt-[2.5rem] text-white lg:mt-[5rem]'>
         <div>
             <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>How it works</h3>
             <p className='mt-2.5 font-workSans font-normal text-base leading[1.4rem] xs:text-[1.2rem] sm:text-base lg:text-[1.375rem]'>Find Out How To Get Started</p>

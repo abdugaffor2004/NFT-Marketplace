@@ -217,3 +217,37 @@ export const howItWorksCards = [
     icon: "HowItWorksIcon_3.png",
   },
 ];
+
+export const socialMedia = [
+  {
+    title: "Discord",
+    icon: "DiscordLogo.svg",
+  },
+  {
+    title: "Instagram",
+    icon: "InstagramLogo.svg",
+  },
+  {
+    title: "Twitter",
+    icon: "TwitterLogo.svg",
+  },
+  {
+    title: "Youtube",
+    icon: "YoutubeLogo.svg",
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Marketplace",
+    url: "#",
+  },
+  {
+    title: "Rankings",
+    url: "#",
+  },
+  {
+    title: "Connect a wallet",
+    url: "#",
+  },
+];

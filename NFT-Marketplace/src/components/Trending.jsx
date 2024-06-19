@@ -36,7 +36,7 @@ const Trending = () => {
 
 
    return (
-    <section className='mt-[5rem]'>
+    <section className='mt-[5rem] xs:mt-[7.5rem] lg:mt-[10rem]'>
         <div className='text-white '>
             <h3 className='font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]'>Trending Collection</h3>
             <p className='mt-2.5 font-workSans font-normal text-base leading[1.4rem] xs:text-[1.2rem] sm:text-base lg:text-[1.375rem]'>Checkout our weekly updated trending collection</p>

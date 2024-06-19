@@ -9,7 +9,7 @@ import eyeIcon from '../assets/EyeOutlined.png'
 const Auction = () => {
 
   return (
-    <section style={{backgroundImage:`url(${mushroom})`}} className={`mt-[3.75rem] w-full min-h-[590px] bg-center bg-cover text-white`}>
+    <section style={{backgroundImage:`url(${mushroom})`}} className={`mt-[3.75rem] w-full min-h-[590px] bg-center bg-cover text-white sm:mt-[5rem]`}>
         <div style={{ background:'linear-gradient(0deg, rgba(162,89,255,1) 3%, rgba(255,255,255,0) 100%)'}} className='w-full min-h-[590px] flex justify-center items-end'>
             <div className='mb-10 min-w-[315px] h-[430px] sm:flex sm:items-end sm:justify-between sm:mb-[60px] sm:mx-[82px] md:mx-[115px] sm:w-full sm:h-[210px] xl:w-[1400px]'>
                 <div className='mr-5'>

@@ -8,6 +8,7 @@ import DiscoverNft from "./DiscoverNft"
 import Auction from "./Auction"
 import Timer from "./Timer"
 import Join from "./Join"
+import Footer from "./Footer"
 
 export {
     Hero,
@@ -19,5 +20,6 @@ export {
     DiscoverNft,
     Auction,
     Timer,
-    Join
+    Join,
+    Footer,
 }
