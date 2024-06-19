@@ -1,18 +1,4 @@
 import React from 'react'
-// import primaryImage_1 from "../assets/trending/PrimaryPhotoPlaceholder_1.png"
-// import secondImage_1 from "../assets/trending/SecondaryPhotoPlaceholder_1.png"
-// import thirdImage_1 from "../assets/trending/ThirdPhotoPlaceholder_1.png"
-// import authorAvatar_1 from "../assets/trending/AvatarPlaceholder_1.svg"
-
-// import primaryImage_2 from "../assets/trending/PrimaryPhotoPlaceholder_2.png"
-// import secondImage_2 from "../assets/trending/SecondaryPhotoPlaceholder_2.png"
-// import thirdImage_2 from "../assets/trending/ThirdPhotoPlaceholder_2.png"
-// import authorAvatar_2 from "../assets/trending/AvatarPlaceholder_2.svg"
-
-// import primaryImage_3 from "../assets/trending/PrimaryPhotoPlaceholder_3.png"
-// import secondImage_3 from "../assets/trending/SecondaryPhotoPlaceholder_3.png"
-// import thirdImage_3 from "../assets/trending/ThirdPhotoPlaceholder_3.png"
-// import authorAvatar_3 from "../assets/trending/AvatarPlaceholder_3.svg"
 import { useWindowSize } from '../hooks/useWindowSize'
 import { chopArray, getImage } from '../helpers'
 import { trendingCollections } from '../constants'

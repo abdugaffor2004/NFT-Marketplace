@@ -13,7 +13,7 @@ const Navbar = () => {
             <img src={logo} alt="storeLogo" />
         </div>
 
-        <ul className='md:flex list-none hidden justify-end items-center flex-1'>
+        <ul className='md_lg:flex list-none hidden justify-end items-center flex-1'>
             {navLinks.map( (item) =>(
                 <li key={item.id} className='font-workSans font-semibold text-base cursor-pointer mr-[3.125rem] last:mr-0'>
                     <a href="#">{item.title}</a>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <Button icon={user} title={'Sign up'} size={'small'}/>
         </ul>
 
-        <div className='md:hidden'>
+        <div className='md_lg:hidden'>
             <img src={navMenu} alt="burgerMenuIcon" />
         </div>
     </nav>

@@ -4,7 +4,9 @@ import { Auction, Categories, Creators, DiscoverNft, Footer, Hero, HowItWorks, J
 
 
 
-const App = () => (
+const App = () =>{
+  
+  return (
   <div className='bg-background w-full overflow-hidden'>
     
     <div className={`${styles.paddingXHeader} ${styles.flexCenter}`}>
@@ -21,7 +23,6 @@ const App = () => (
         <Creators />
         <Categories />
         <DiscoverNft />
-        {/* <HowItWorks /> */}
       </div>
     </div>
 
@@ -44,6 +45,7 @@ const App = () => (
   
 
   </div>
-)
+  
+)}
 
 export default App

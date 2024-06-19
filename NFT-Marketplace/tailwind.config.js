@@ -9,8 +9,6 @@ export default {
         backgroundSecond: "#3B3B3B",
         purple: "#A259FF",
         grey: "#858584",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
         spaceMono: ["Space Mono", "monoscape"],
@@ -24,6 +22,7 @@ export default {
       xs_sm: "500px",
       sm: "680px",
       md: "866px",
+      md_lg: "1020px",
       lg: "1279px",
       xl: "1400px",
     },

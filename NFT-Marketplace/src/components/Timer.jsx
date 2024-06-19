@@ -53,13 +53,13 @@ const Timer = () => {
         <div className="flex text-white text-[2.375rem]">
 
             {Object.keys(time).map((item) =>(
-                <>
+                <React.Fragment>
                     <span className="ml-4 text-[2.375rem] first:hidden">:</span>
                     <div className="flex flex-col items-center">
                         <span className='font-bold'>{String(time[item])}</span>
                         <span className=" text-xs font-normal">{getLabel(item)}</span>
                     </div> 
-                </>
+                </React.Fragment>
                
             ))}
         </div>
