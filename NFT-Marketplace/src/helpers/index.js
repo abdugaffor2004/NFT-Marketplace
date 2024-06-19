@@ -5,6 +5,6 @@ export const chopArray = (array, sizeOfNewArray) =>{
     return arr
 }
 
-export const getImage = (name, folderName) =>{
+export const getImage = (name, folderName='') =>{
     return new URL(`../assets/${folderName}/${name}`, import.meta.url).href
 }

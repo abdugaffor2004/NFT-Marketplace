@@ -5,6 +5,8 @@ import HowItWorks from "./HowItWorks"
 import Creators from "./Creators"
 import Categories from "./Categories"
 import DiscoverNft from "./DiscoverNft"
+import Auction from "./Auction"
+import Timer from "./Timer"
 
 export {
     Hero,
@@ -13,5 +15,7 @@ export {
     HowItWorks,
     Creators,
     Categories,
-    DiscoverNft
+    DiscoverNft,
+    Auction,
+    Timer
 }

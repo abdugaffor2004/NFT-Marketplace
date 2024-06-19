@@ -16,6 +16,7 @@ export default {
         spaceMono: ["Space Mono", "monoscape"],
         workSans: ["Work Sans", "sans-serif"],
       },
+      
     },
     screens: {
       ss: "320px",
