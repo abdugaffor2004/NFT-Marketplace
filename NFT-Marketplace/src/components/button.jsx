@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({icon, title, size, outlined=false, className=''}) => (
+const Button = ({icon, title, size, outlined=false, className=''}, {children}) => (
   
     <button className= {
         `flex w-full sm:w-auto items-center justify-center bg-purple rounded-[1.25rem]  

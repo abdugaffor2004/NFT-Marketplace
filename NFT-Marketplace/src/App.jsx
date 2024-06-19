@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './style'
 import { Auction, Categories, Creators, DiscoverNft, Footer, Hero, HowItWorks, Join, Navbar, Trending} from './components'
+import { useWindowSize } from './hooks/useWindowSize';
 
 
 
 const App = () =>{
-  
+  const [windowWidth, windowHeight] = useWindowSize();
+
   return (
   <div className='bg-background w-full overflow-hidden'>
     
@@ -19,8 +21,8 @@ const App = () =>{
     <div className={`bg-primary ${styles.flexStart} ${styles.paddingX} ${styles.paddingY} pb-0`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
-        <Trending />
-        <Creators />
+        <Trending width={windowWidth}/>
+        <Creators width={windowWidth}/>
         <Categories />
         <DiscoverNft />
       </div>
@@ -45,7 +47,7 @@ const App = () =>{
   
 
   </div>
-  
+
 )}
 
 export default App

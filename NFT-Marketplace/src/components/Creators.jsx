@@ -5,10 +5,9 @@ import buttonIcon from "../assets/RocketLaunchOutlined.svg"
 import { useWindowSize } from '../hooks/useWindowSize'
 import { chopArray, getImage } from '../helpers'
 
-const Creators = () => {
+const Creators = ({width=[]}) => {
     let cardsArray=[];
-    const [width, height] = useWindowSize();
-  
+    
     if(width >= 0){
         cardsArray = chopArray(creatorsCard, 5)
     }
