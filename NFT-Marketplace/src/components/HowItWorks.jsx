@@ -1,4 +1,4 @@
-import { howItWorksCards } from '../constants';
+import { howItWorksCards } from '../data';
 import { getImage } from '../helpers';
 
 const HowItWorks = () => (

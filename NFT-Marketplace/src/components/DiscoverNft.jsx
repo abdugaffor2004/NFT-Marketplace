@@ -1,6 +1,6 @@
 import eyeIcon from '../assets/EyeOutlined.png';
 import Button from './button';
-import { NFTs } from '../constants';
+import { NFTs } from '../data';
 import { getImage } from '../helpers';
 
 const DiscoverNft = () => (

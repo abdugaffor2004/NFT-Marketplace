@@ -1,4 +1,4 @@
-import { navLinks } from '../constants';
+import { navLinks } from '../data';
 import user from '../assets/User.svg';
 import logo from '../assets/logo.svg';
 import navMenu from '../assets/navMenu.svg';

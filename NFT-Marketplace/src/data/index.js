@@ -1,3 +1,11 @@
+export const breakPoints = {
+  start: 0,
+  small: 680,
+  preMiddle: 834,
+  middle: 866,
+  large: 1150
+}
+
 export const navLinks = [
   {
     id: 'Marketplace',

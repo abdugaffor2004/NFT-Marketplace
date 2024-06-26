@@ -1,4 +1,4 @@
-import { categoriesCard } from '../constants';
+import { categoriesCard } from '../data';
 import { getImage } from '../helpers';
 
 const Categories = () => (

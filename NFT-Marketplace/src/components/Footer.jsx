@@ -1,5 +1,5 @@
 import logo from '../assets/logo.svg';
-import { footerLinks, socialMedia } from '../constants';
+import { footerLinks, socialMedia } from '../data';
 import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 import Button from './button';
@@ -7,7 +7,7 @@ import envelopeIcon from '../assets/EnvelopeSimple.svg';
 
 const Footer = () => {
   const [width] = useWindowSize();
-  
+
   return (
     <footer className="text-[#CCCCCC]">
       <div className="pt-[2.5rem] md:flex md:flex-wrap md:justify-between md:gap-[30px]">
