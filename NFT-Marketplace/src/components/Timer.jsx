@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Timer = () => {
   const [time, setTime] = useState({
@@ -35,30 +35,22 @@ const Timer = () => {
     return () => clearInterval(countdown);
   }, []);
 
-  const getLabel = key => {
-    switch (key) {
-      case 'hours':
-        return 'Hours';
-      case 'minutes':
-        return 'Minutes';
-      case 'seconds':
-        return 'Seconds';
-      default:
-        return '';
-    }
-  };
-
   return (
     <div className="flex text-white text-[2.375rem]">
-      {Object.keys(time).map(item => (
-        <React.Fragment key={getLabel(item)}>
-          <span className="ml-4 text-[2.375rem] first:hidden">:</span>
-          <div className="flex flex-col items-center">
-            <span className="font-bold">{String(time[item])}</span>
-            <span className=" text-xs font-normal">{getLabel(item)}</span>
-          </div>
-        </React.Fragment>
-      ))}
+      <div className="flex flex-col items-center">
+        <span className="font-bold">{String(time.hours)}</span>
+        <span className="text-xs font-normal">Hours</span>
+      </div>
+      <span className="ml-4 text-[2.375rem]">:</span>
+      <div className="flex flex-col items-center">
+        <span className="font-bold">{String(time.minutes)}</span>
+        <span className="text-xs font-normal">Minutes</span>
+      </div>
+      <span className="ml-4 text-[2.375rem]">:</span>
+      <div className="flex flex-col items-center">
+        <span className="font-bold">{String(time.seconds)}</span>
+        <span className="text-xs font-normal">Seconds</span>
+      </div>
     </div>
   );
 };
