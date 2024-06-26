@@ -1,7 +1,9 @@
 import { chopArray, getImage } from '../helpers';
 import { trendingCollections } from '../constants';
+import { useWindowSize } from '../hooks/useWindowSize';
 
-const Trending = ({ width = [] }) => {
+const Trending = () => {
+  const [width] = useWindowSize();
   let newCollection;
 
   if (width >= 0) {

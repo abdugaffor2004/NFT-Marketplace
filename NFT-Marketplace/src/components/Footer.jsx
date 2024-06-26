@@ -7,6 +7,7 @@ import envelopeIcon from '../assets/EnvelopeSimple.svg';
 
 const Footer = () => {
   const [width] = useWindowSize();
+  
   return (
     <footer className="text-[#CCCCCC]">
       <div className="pt-[2.5rem] md:flex md:flex-wrap md:justify-between md:gap-[30px]">

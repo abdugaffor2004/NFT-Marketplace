@@ -8,6 +8,7 @@ export function useWindowSize() {
     }
     window.addEventListener('resize', updateSize);
     updateSize();
+    
     return () => window.removeEventListener('resize', updateSize);
   }, []);
 

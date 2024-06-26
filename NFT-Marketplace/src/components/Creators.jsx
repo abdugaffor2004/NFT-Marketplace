@@ -2,8 +2,10 @@ import { creatorsCard } from '../constants';
 import Button from './button';
 import buttonIcon from '../assets/RocketLaunchOutlined.svg';
 import { chopArray, getImage } from '../helpers';
+import { useWindowSize } from '../hooks/useWindowSize';
 
-const Creators = ({ width = [] }) => {
+const Creators = () => {
+  const [width] = useWindowSize();
   let cardsArray = [];
 
   if (width >= 0) {
