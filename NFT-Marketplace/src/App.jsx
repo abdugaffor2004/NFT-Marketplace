@@ -1,16 +1,15 @@
 import styles from './style';
-import {
-  Auction,
-  Categories,
-  Creators,
-  DiscoverNft,
-  Footer,
-  Hero,
-  HowItWorks,
-  Join,
-  Navbar,
-  Trending,
-} from './components';
+
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Trending from './components/Trending';
+import HowItWorks from './components/HowItWorks';
+import Creators from './components/Creators';
+import Categories from './components/Categories';
+import DiscoverNft from './components/DiscoverNft';
+import Auction from './components/Auction';
+import Join from './components/Join';
+import Footer from './components/Footer';
 
 const App = () => (
   <div className="bg-background w-full overflow-hidden">
