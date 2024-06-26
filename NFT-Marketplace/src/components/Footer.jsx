@@ -6,7 +6,7 @@ import Button from './button';
 import envelopeIcon from '../assets/EnvelopeSimple.svg';
 
 const Footer = () => {
-  const [width] = useWindowSize();
+  const { width } = useWindowSize();
 
   return (
     <footer className="text-[#CCCCCC]">

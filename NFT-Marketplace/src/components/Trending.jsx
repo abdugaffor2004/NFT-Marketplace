@@ -3,11 +3,11 @@ import { breakPoints, trendingCollections } from '../data';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const Trending = () => {
-  const [width] = useWindowSize();
+  const { width } = useWindowSize();
   let newCollection;
 
   if (width >= breakPoints.start) {
-    newCollection = chopArray(trendingCollections, 1)
+    newCollection = chopArray(trendingCollections, 1);
   }
   if (width >= breakPoints.small) {
     newCollection = chopArray(trendingCollections, 2);

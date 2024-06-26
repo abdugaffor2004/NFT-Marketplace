@@ -5,7 +5,7 @@ import { chopArray, getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const Creators = () => {
-  const [width] = useWindowSize();
+  const { width } = useWindowSize();
   let cardsArray = [];
 
   if (width >= breakPoints.start) {

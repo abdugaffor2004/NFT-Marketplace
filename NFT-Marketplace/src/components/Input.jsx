@@ -3,7 +3,7 @@ import envelopeIcon from '../assets/EnvelopeSimple.svg';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const InputGroup = ({ className }) => {
-  const [width] = useWindowSize();
+  const { width } = useWindowSize();
 
   return (
     <div className={`mt-10 lg:flex md:min-h-[62px] ${className}`}>
