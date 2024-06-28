@@ -2,7 +2,7 @@ import { Button } from './button';
 import rocketLaunch from '../assets/RocketLaunch.svg';
 import imagePlaceholder from '../assets/ImagePlaceholder.svg';
 import avatar from '../assets/Avatar.svg';
-import { STATISTICS } from '../data/Hero';
+import { STATISTICS } from '../data/hero';
 
 export const Hero = () => (
   <section className="text-white flex flex-col sm:flex-row sm:justify-between md:justify-center md:text-center md_lg:justify-normal md_lg:text-start lg:justify-between">

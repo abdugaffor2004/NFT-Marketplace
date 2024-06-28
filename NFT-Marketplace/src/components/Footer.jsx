@@ -1,5 +1,5 @@
 import logo from '../assets/logo.svg';
-import { FOOTER_LINKS, SOCIAL_MEDIA } from '../data/Footer';
+import { FOOTER_LINKS, SOCIAL_MEDIA } from '../data/footer';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { Button } from './button';
 import envelopeIcon from '../assets/EnvelopeSimple.svg';

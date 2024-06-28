@@ -1,6 +1,6 @@
 import eyeIcon from '../assets/EyeOutlined.png';
 import { Button } from './button';
-import { NFTS } from '../data/DiscoverNft';
+import { NFTS } from '../data/discover-nft';
 
 export const DiscoverNft = () => (
   <section className="mt-[5rem] text-white lg:mt-[10rem]">

@@ -1,5 +1,5 @@
-import { CREATORS_CARDS } from '../data/Creators';
-import { BREAKPOINTS } from '../data/Breakpoints';
+import { CREATORS_CARDS } from '../data/creators';
+import { BREAKPOINTS } from '../data/breakpoints';
 import { Button } from './button';
 import buttonIcon from '../assets/RocketLaunchOutlined.svg';
 import { useWindowSize } from '../hooks/useWindowSize';

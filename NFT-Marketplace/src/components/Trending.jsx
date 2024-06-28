@@ -1,5 +1,5 @@
-import { TRENDING_COLLECTIONS } from '../data/Trending';
-import { BREAKPOINTS } from '../data/Breakpoints';
+import { TRENDING_COLLECTIONS } from '../data/trending';
+import { BREAKPOINTS } from '../data/breakpoints';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 export const Trending = () => {

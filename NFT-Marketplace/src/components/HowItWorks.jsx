@@ -1,4 +1,4 @@
-import { HOW_IT_WORKS_CARDS } from '../data/HowItWorks';
+import { HOW_IT_WORKS_CARDS } from '../data/how-it-works';
 
 export const HowItWorks = () => (
   <section className="mt-[2.5rem] text-white lg:mt-[5rem]">

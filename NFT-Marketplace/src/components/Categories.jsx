@@ -1,4 +1,4 @@
-import { CATEGORIES_CARDS } from '../data/Categories';
+import { CATEGORIES_CARDS } from '../data/categories';
 
 export const Categories = () => (
   <section className="text-white mt-[5rem] lg:mt-[10rem]">
