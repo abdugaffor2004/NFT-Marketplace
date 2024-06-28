@@ -1,19 +1,24 @@
+import DiscordLogo from '../assets/footer/DiscordLogo.svg';
+import InstagramLogo from '../assets/footer/InstagramLogo.svg';
+import TwitterLogo from '../assets/footer/TwitterLogo.svg';
+import YoutubeLogo from '../assets/footer/YoutubeLogo.svg';
+
 export const SOCIAL_MEDIA = [
   {
     title: 'Discord',
-    icon: 'DiscordLogo.svg',
+    icon: DiscordLogo,
   },
   {
     title: 'Instagram',
-    icon: 'InstagramLogo.svg',
+    icon: InstagramLogo,
   },
   {
     title: 'Twitter',
-    icon: 'TwitterLogo.svg',
+    icon: TwitterLogo,
   },
   {
     title: 'Youtube',
-    icon: 'YoutubeLogo.svg',
+    icon: YoutubeLogo,
   },
 ];
 

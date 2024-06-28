@@ -1,6 +1,5 @@
 import { TRENDING_COLLECTIONS } from '../data/Trending';
 import { BREAKPOINTS } from '../data/Breakpoints';
-import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 export const Trending = () => {
@@ -35,12 +34,12 @@ export const Trending = () => {
             className="sm:max-w-[330px] sm:mr-[1.875rem] lg:min-w-[360px] last:mr-0"
           >
             <div>
-              <img className="w-full" src={getImage(item.fImage, 'trending')} alt="PrimaryImage" />
+              <img className="w-full" src={item.fImage} alt="PrimaryImage" />
             </div>
 
             <div className="flex justify-between mt-[0.9375rem] xs:hidden sm:flex gap-4">
-              <img className="w-[30%]" src={getImage(item.sImage, 'trending')} alt="SecondImage" />
-              <img className="w-[30%]" src={getImage(item.tImage, 'trending')} alt="ThirdImage" />
+              <img className="w-[30%]" src={item.sImage} alt="SecondImage" />
+              <img className="w-[30%]" src={item.tImage} alt="ThirdImage" />
               <div className="font-spaceMono  font-bold text-base flex justify-center items-center w-[30%] bg-purple rounded-[1.25rem]">
                 <span className="text-[1rem]">{item.trendingAmount}</span>
               </div>
@@ -53,7 +52,7 @@ export const Trending = () => {
               <div className="mt-2.5 flex items-center">
                 <img
                   className="mr-3 xs:w-[2.5rem] sm:w-[1.5rem]"
-                  src={getImage(item.authorAvatar, 'trending')}
+                  src={item.authorAvatar}
                   alt="Avatar"
                 />
                 <span className="font-workSans font-normal text-base xs:text-[1.2rem] sm:text-base">

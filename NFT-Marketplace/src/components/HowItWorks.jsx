@@ -1,5 +1,4 @@
 import { HOW_IT_WORKS_CARDS } from '../data/HowItWorks';
-import { getImage } from '../helpers';
 
 export const HowItWorks = () => (
   <section className="mt-[2.5rem] text-white lg:mt-[5rem]">
@@ -20,7 +19,7 @@ export const HowItWorks = () => (
         >
           <img
             className="min-w-[6.25rem] sm:min-w-[10rem] md:w-[13.75rem] object-contain mr-5 sm:mr-0"
-            src={getImage(item.icon, 'howItWorks')}
+            src={item.icon}
             alt="Icon"
           />
           <div className="sm:mt-5 ">

@@ -1,5 +1,5 @@
 import mushroom from '../assets/Mushroom.png';
-import { getImage } from '../helpers';
+import ArtistAvatar from '../assets/creators/ArtistAvatar_7.png';
 import { Timer } from './Timer';
 import { Button } from './button';
 import eyeIcon from '../assets/EyeOutlined.png';
@@ -18,11 +18,7 @@ export const Auction = () => (
       <div className="mb-10 min-w-[315px] h-[430px] sm:flex sm:items-end sm:justify-between sm:mb-[60px] sm:mx-[82px] md:mx-[115px] sm:w-full sm:h-[210px] xl:w-[1400px]">
         <div className="mr-5">
           <div className="py-2.5 px-5 bg-backgroundSecond inline-flex rounded-[1.25rem]">
-            <img
-              className="w-6 mr-3"
-              src={getImage('ArtistAvatar_7.png', 'creators')}
-              alt="Avatar"
-            />
+            <img className="w-6 mr-3" src={ArtistAvatar} alt="Avatar" />
             <span className="font-workSans font-normal">Shroomie</span>
           </div>
           <h6 className="font-semibold text-[2.375rem] mt-[1.875rem] mb-[1.875rem] leading-[45.6px] lg:text-[51px]">

@@ -1,6 +1,5 @@
 import logo from '../assets/logo.svg';
 import { FOOTER_LINKS, SOCIAL_MEDIA } from '../data/Footer';
-import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { Button } from './button';
 import envelopeIcon from '../assets/EnvelopeSimple.svg';
@@ -23,7 +22,7 @@ export const Footer = () => {
                 <img
                   className="mr-2.5 last:mr-0"
                   key={item.title}
-                  src={getImage(item.icon, 'footer')}
+                  src={item.icon}
                   alt={`${item.title}Icon`}
                 />
               ))}

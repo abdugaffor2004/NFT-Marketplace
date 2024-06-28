@@ -1,7 +1,6 @@
 import eyeIcon from '../assets/EyeOutlined.png';
 import { Button } from './button';
 import { NFTS } from '../data/DiscoverNft';
-import { getImage } from '../helpers';
 
 export const DiscoverNft = () => (
   <section className="mt-[5rem] text-white lg:mt-[10rem]">
@@ -27,14 +26,14 @@ export const DiscoverNft = () => (
         >
           <img
             className="rounded-t-[1.25rem] ss:min-w-[300px] ss:h-auto"
-            src={getImage(item.image, 'NFT')}
+            src={item.image}
             alt="Image"
           />
           <div className="bg-backgroundSecond px-5 pt-5 pb-[1.5625rem] rounded-b-[1.25rem]">
             <div>
               <h6 className="font-workSans font-semibold text-[1.375rem]">{item.title}</h6>
               <div className="flex mt-1">
-                <img className="mr-3" src={getImage(item.authorAvatar, 'NFT')} alt="Avatar" />
+                <img className="mr-3" src={item.authorAvatar} alt="Avatar" />
                 <span className="font-spaceMono font-normal">{item.authorName}</span>
               </div>
             </div>
