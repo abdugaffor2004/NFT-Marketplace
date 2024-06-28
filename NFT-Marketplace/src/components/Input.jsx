@@ -1,8 +1,8 @@
-import Button from './button';
+import { Button } from './button';
 import envelopeIcon from '../assets/EnvelopeSimple.svg';
 import { useWindowSize } from '../hooks/useWindowSize';
 
-const InputGroup = ({ className }) => {
+export const InputGroup = ({ className }) => {
   const { width } = useWindowSize();
 
   return (
@@ -20,5 +20,3 @@ const InputGroup = ({ className }) => {
     </div>
   );
 };
-
-export default InputGroup;

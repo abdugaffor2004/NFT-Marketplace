@@ -2,10 +2,10 @@ import logo from '../assets/logo.svg';
 import { FOOTER_LINKS, SOCIAL_MEDIA } from '../data/Footer';
 import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
-import Button from './button';
+import { Button } from './button';
 import envelopeIcon from '../assets/EnvelopeSimple.svg';
 
-const Footer = () => {
+export const Footer = () => {
   const { width } = useWindowSize();
 
   return (
@@ -71,5 +71,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

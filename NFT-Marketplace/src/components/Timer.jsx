@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Timer = () => {
+export const Timer = () => {
   const [time, setTime] = useState({
     hours: 59,
     minutes: 59,
@@ -54,5 +54,3 @@ const Timer = () => {
     </div>
   );
 };
-
-export default Timer;

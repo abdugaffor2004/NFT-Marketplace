@@ -1,10 +1,10 @@
 import mushroom from '../assets/Mushroom.png';
 import { getImage } from '../helpers';
-import Timer from './Timer';
-import Button from './button';
+import { Timer } from './Timer';
+import { Button } from './button';
 import eyeIcon from '../assets/EyeOutlined.png';
 
-const Auction = () => (
+export const Auction = () => (
   <section
     style={{ backgroundImage: `url(${mushroom})` }}
     className={`mt-[3.75rem] w-full min-h-[590px] bg-center bg-cover text-white sm:mt-[5rem]`}
@@ -49,5 +49,3 @@ const Auction = () => (
     </div>
   </section>
 );
-
-export default Auction;

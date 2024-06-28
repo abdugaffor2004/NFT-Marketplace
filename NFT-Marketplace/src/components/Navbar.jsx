@@ -2,9 +2,9 @@ import { NAV_LINKS } from '../data/Navbar';
 import user from '../assets/User.svg';
 import logo from '../assets/logo.svg';
 import navMenu from '../assets/navMenu.svg';
-import Button from './button';
+import { Button } from './button';
 
-const Navbar = () => (
+export const Navbar = () => (
   <nav className="w-full py-5 flex justify-between items-center text-white ">
     <div className="flex items-center">
       <img src={logo} alt="storeLogo" />
@@ -28,5 +28,3 @@ const Navbar = () => (
     </div>
   </nav>
 );
-
-export default Navbar;

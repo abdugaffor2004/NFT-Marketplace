@@ -1,11 +1,11 @@
 import { CREATORS_CARDS } from '../data/Creators';
 import { BREAKPOINTS } from '../data/Breakpoints';
-import Button from './button';
+import { Button } from './button';
 import buttonIcon from '../assets/RocketLaunchOutlined.svg';
 import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
-const Creators = () => {
+export const Creators = () => {
   const { width } = useWindowSize();
   let cardsArray = [];
 
@@ -64,5 +64,3 @@ const Creators = () => {
     </section>
   );
 };
-
-export default Creators;

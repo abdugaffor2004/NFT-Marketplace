@@ -3,7 +3,7 @@ import { BREAKPOINTS } from '../data/Breakpoints';
 import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
-const Trending = () => {
+export const Trending = () => {
   const { width } = useWindowSize();
   let newCollection;
 
@@ -67,5 +67,3 @@ const Trending = () => {
     </section>
   );
 };
-
-export default Trending;

@@ -1,7 +1,7 @@
 import { CATEGORIES_CARDS } from '../data/Categories';
 import { getImage } from '../helpers';
 
-const Categories = () => (
+export const Categories = () => (
   <section className="text-white mt-[5rem] lg:mt-[10rem]">
     <div className="flex justify-between items-end">
       <h3 className="font-workSans font-semibold text-[1.75rem] leading-[2.45rem] xs:text-[2.5rem] sm:text-[1.75rem] lg:text-[2.375rem]">
@@ -25,5 +25,3 @@ const Categories = () => (
     </div>
   </section>
 );
-
-export default Categories;

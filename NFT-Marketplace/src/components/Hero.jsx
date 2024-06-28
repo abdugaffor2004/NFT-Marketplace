@@ -1,10 +1,10 @@
-import Button from './button';
+import { Button } from './button';
 import rocketLaunch from '../assets/RocketLaunch.svg';
 import imagePlaceholder from '../assets/ImagePlaceholder.svg';
 import avatar from '../assets/Avatar.svg';
 import { STATISTICS } from '../data/Hero';
 
-const Hero = () => (
+export const Hero = () => (
   <section className="text-white flex flex-col sm:flex-row sm:justify-between md:justify-center md:text-center md_lg:justify-normal md_lg:text-start lg:justify-between">
     <div className="sm:w-[330px] md:w-[510px] sm:mr-[1.875rem] ">
       <h1 className="text-[1.75rem] sm:text-[2.375rem] sm:leading-[2.85rem] md:text-[4.1875rem] md:leading-[4.6063rem] font-workSans font-semibold">
@@ -63,5 +63,3 @@ const Hero = () => (
     </div>
   </section>
 );
-
-export default Hero;

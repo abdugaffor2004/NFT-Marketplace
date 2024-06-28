@@ -1,9 +1,9 @@
 import eyeIcon from '../assets/EyeOutlined.png';
-import Button from './button';
+import { Button } from './button';
 import { NFTS } from '../data/DiscoverNft';
 import { getImage } from '../helpers';
 
-const DiscoverNft = () => (
+export const DiscoverNft = () => (
   <section className="mt-[5rem] text-white lg:mt-[10rem]">
     <div className="flex justify-between items-end">
       <div>
@@ -55,5 +55,3 @@ const DiscoverNft = () => (
     </div>
   </section>
 );
-
-export default DiscoverNft;
