@@ -1,5 +1,5 @@
 import logo from '../assets/logo.svg';
-import { footerLinks, socialMedia } from '../data';
+import { FOOTER_LINKS, SOCIAL_MEDIA } from '../data/Footer';
 import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 import Button from './button';
@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="mt-5">
             <span>Join our community</span>
             <div className="flex mt-[0.9375rem]">
-              {socialMedia.map(item => (
+              {SOCIAL_MEDIA.map(item => (
                 <img
                   className="mr-2.5 last:mr-0"
                   key={item.title}
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="mt-[1.875rem] md:mt-0 ">
           <h6 className="font-bold font-spaceMono text-[1.375rem] text-white">Explore</h6>
           <div className="flex flex-col ">
-            {footerLinks.map(item => (
+            {FOOTER_LINKS.map(item => (
               <a key={item.title} className="mt-5" href={item.url}>
                 {item.title}
               </a>

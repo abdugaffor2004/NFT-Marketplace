@@ -1,6 +1,6 @@
 import eyeIcon from '../assets/EyeOutlined.png';
 import Button from './button';
-import { NFTs } from '../data';
+import { NFTS } from '../data/DiscoverNft';
 import { getImage } from '../helpers';
 
 const DiscoverNft = () => (
@@ -20,7 +20,7 @@ const DiscoverNft = () => (
     </div>
 
     <div className="mt-[2.5rem] flex flex-wrap justify-between xs:justify-center sm:justify-between sm:flex-nowrap md:justify-center lg:justify-between lg:mt-[3.75rem]">
-      {NFTs.map(item => (
+      {NFTS.map(item => (
         <div
           key={item.title}
           className="mb-5 last:mb-0 sm:mb-0 sm:first:mr-[1.875rem] sm:last:hidden lg:last:block lg:last:ml-[1.875rem]"

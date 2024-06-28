@@ -1,4 +1,4 @@
-import { howItWorksCards } from '../data';
+import { HOW_IT_WORKS_CARDS } from '../data/HowItWorks';
 import { getImage } from '../helpers';
 
 const HowItWorks = () => (
@@ -13,7 +13,7 @@ const HowItWorks = () => (
     </div>
 
     <div className="sm:flex sm:gap-[1.875rem] lg:justify-center">
-      {howItWorksCards.map(item => (
+      {HOW_IT_WORKS_CARDS.map(item => (
         <div
           key={item.title}
           className="first:mt-10 mt-5 bg-backgroundSecond flex p-5 rounded-[1.25rem] xs:items-center sm:flex-col sm:text-center sm:min-w-[13.125rem] sm:min-h-[21.0625rem] sm:mt-10 sm:first:mt-10 md:p-[1.875rem] lg:w-full lg:mt-12 lg:first:mt-12"

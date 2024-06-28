@@ -2,7 +2,7 @@ import Button from './button';
 import rocketLaunch from '../assets/RocketLaunch.svg';
 import imagePlaceholder from '../assets/ImagePlaceholder.svg';
 import avatar from '../assets/Avatar.svg';
-import { statistics } from '../data';
+import { STATISTICS } from '../data/Hero';
 
 const Hero = () => (
   <section className="text-white flex flex-col sm:flex-row sm:justify-between md:justify-center md:text-center md_lg:justify-normal md_lg:text-start lg:justify-between">
@@ -32,7 +32,7 @@ const Hero = () => (
       <div className="mt-10 md:flex md:flex-col md:justify-center md_lg:block">
         <Button icon={rocketLaunch} title={'Get Started'} size={'large'} />
         <div className="flex mt-[1.875rem] sm:mt-5 justify-center sm:justify-normal">
-          {statistics.map(item => (
+          {STATISTICS.map(item => (
             <div
               key={item.title}
               className="flex flex-col items-start mr-10 last:mr-0 md:w-[150px] md:mr-[1.875rem]"

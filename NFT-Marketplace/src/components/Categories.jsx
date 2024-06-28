@@ -1,4 +1,4 @@
-import { categoriesCard } from '../data';
+import { CATEGORIES_CARDS } from '../data/Categories';
 import { getImage } from '../helpers';
 
 const Categories = () => (
@@ -10,7 +10,7 @@ const Categories = () => (
     </div>
 
     <div className="mt-[2.5rem] flex flex-wrap justify-between xs:justify-around sm:justify-between lg:mt-[3.75rem]">
-      {categoriesCard.map(item => (
+      {CATEGORIES_CARDS.map(item => (
         <div key={item.title} className="min-w-[148px] w-[148px] mb-5 md:w-[240px] md:h-[316px]">
           <img
             className="rounded-t-[1.25rem]"

@@ -1,19 +1,20 @@
+import { TRENDING_COLLECTIONS } from '../data/Trending';
+import { BREAKPOINTS } from '../data/Breakpoints';
 import { chopArray, getImage } from '../helpers';
-import { breakPoints, trendingCollections } from '../data';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const Trending = () => {
   const { width } = useWindowSize();
   let newCollection;
 
-  if (width >= breakPoints.start) {
-    newCollection = chopArray(trendingCollections, 1);
+  if (width >= BREAKPOINTS.start) {
+    newCollection = chopArray(TRENDING_COLLECTIONS, 1);
   }
-  if (width >= breakPoints.small) {
-    newCollection = chopArray(trendingCollections, 2);
+  if (width >= BREAKPOINTS.small) {
+    newCollection = chopArray(TRENDING_COLLECTIONS, 2);
   }
-  if (width >= breakPoints.middle) {
-    newCollection = trendingCollections;
+  if (width >= BREAKPOINTS.middle) {
+    newCollection = TRENDING_COLLECTIONS;
   }
 
   return (

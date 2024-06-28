@@ -1,4 +1,5 @@
-import { breakPoints, creatorsCard } from '../data';
+import { CREATORS_CARDS } from '../data/Creators';
+import { BREAKPOINTS } from '../data/Breakpoints';
 import Button from './button';
 import buttonIcon from '../assets/RocketLaunchOutlined.svg';
 import { chopArray, getImage } from '../helpers';
@@ -8,14 +9,14 @@ const Creators = () => {
   const { width } = useWindowSize();
   let cardsArray = [];
 
-  if (width >= breakPoints.start) {
-    cardsArray = chopArray(creatorsCard, 5);
+  if (width >= BREAKPOINTS.start) {
+    cardsArray = chopArray(CREATORS_CARDS, 5);
   }
-  if (width >= breakPoints.preMiddle) {
-    cardsArray = chopArray(creatorsCard, 6);
+  if (width >= BREAKPOINTS.preMiddle) {
+    cardsArray = chopArray(CREATORS_CARDS, 6);
   }
-  if (width >= breakPoints.large) {
-    cardsArray = creatorsCard;
+  if (width >= BREAKPOINTS.large) {
+    cardsArray = CREATORS_CARDS;
   }
 
   return (
