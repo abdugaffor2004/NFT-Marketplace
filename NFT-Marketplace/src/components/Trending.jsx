@@ -1,6 +1,6 @@
 import { TRENDING_COLLECTIONS } from '../data/Trending';
 import { BREAKPOINTS } from '../data/Breakpoints';
-import { chopArray, getImage } from '../helpers';
+import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const Trending = () => {
@@ -8,10 +8,10 @@ const Trending = () => {
   let newCollection;
 
   if (width >= BREAKPOINTS.start) {
-    newCollection = chopArray(TRENDING_COLLECTIONS, 1);
+    newCollection = TRENDING_COLLECTIONS.slice(0, 1);
   }
   if (width >= BREAKPOINTS.small) {
-    newCollection = chopArray(TRENDING_COLLECTIONS, 2);
+    newCollection = TRENDING_COLLECTIONS.slice(0, 2);
   }
   if (width >= BREAKPOINTS.middle) {
     newCollection = TRENDING_COLLECTIONS;
@@ -42,8 +42,7 @@ const Trending = () => {
               <img className="w-[30%]" src={getImage(item.sImage, 'trending')} alt="SecondImage" />
               <img className="w-[30%]" src={getImage(item.tImage, 'trending')} alt="ThirdImage" />
               <div className="font-spaceMono  font-bold text-base flex justify-center items-center w-[30%] bg-purple rounded-[1.25rem]">
-                {' '}
-                <span className="text-[1rem]">{item.trendingAmount}</span>{' '}
+                <span className="text-[1rem]">{item.trendingAmount}</span>
               </div>
             </div>
 

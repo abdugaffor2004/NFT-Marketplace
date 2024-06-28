@@ -2,7 +2,7 @@ import { CREATORS_CARDS } from '../data/Creators';
 import { BREAKPOINTS } from '../data/Breakpoints';
 import Button from './button';
 import buttonIcon from '../assets/RocketLaunchOutlined.svg';
-import { chopArray, getImage } from '../helpers';
+import { getImage } from '../helpers';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 const Creators = () => {
@@ -10,10 +10,10 @@ const Creators = () => {
   let cardsArray = [];
 
   if (width >= BREAKPOINTS.start) {
-    cardsArray = chopArray(CREATORS_CARDS, 5);
+    cardsArray = CREATORS_CARDS.slice(0, 5);
   }
   if (width >= BREAKPOINTS.preMiddle) {
-    cardsArray = chopArray(CREATORS_CARDS, 6);
+    cardsArray = CREATORS_CARDS.slice(0, 6);
   }
   if (width >= BREAKPOINTS.large) {
     cardsArray = CREATORS_CARDS;

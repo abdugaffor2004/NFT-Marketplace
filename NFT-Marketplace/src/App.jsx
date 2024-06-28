@@ -9,7 +9,7 @@ import Auction from './components/Auction';
 import Join from './components/Join';
 import Footer from './components/Footer';
 
-const App = () => (
+export const App = () => (
   <div className="bg-background w-full overflow-hidden">
     <div className="sm:px-[3.125rem] px-[1.875rem] flex justify-center items-center">
       <div className="xl:max-w-[1280px] w-full">
@@ -45,5 +45,3 @@ const App = () => (
     </div>
   </div>
 );
-
-export default App;
